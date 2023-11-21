@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Medicine Tracker</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="section">
+                <h2>Next Due Date for Medicine</h2>
+                <p id="nextDueDate"></p>
+            </div>
+            <div class="section">
+                <h2>Save Medicine Taken</h2>
+                <label for="datepicker">Select Date:</label>
+                <input type="date" id="datepicker" max="" onchange="validateDate()" />
+                <button style="margin-top: 5px" class="save-button" onclick="saveMedicineTaken()">Save</button>
+            </div>
+            <div class="section">
+                <button class="history-button" id="historyBtn" onclick="toggleHistory()">Hide History</button>
+                <button class="clear-button" onclick="clearHistory()">Clear History</button>
+                <ul class="history-list" id="historyList"></ul>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

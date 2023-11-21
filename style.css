@@ -1,0 +1,80 @@
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 16px;
+}
+
+input[type="date"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+/* Additional styles for the history toggle and clear buttons */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.history-button {
+    flex: 1;
+    margin-right: 5px;
+}
+
+.clear-button {
+    background-color: #dc3545;
+    float: right; /* Red color for clear button */
+}
+
+.clear-button:hover {
+    background-color: #c82333;
+}
