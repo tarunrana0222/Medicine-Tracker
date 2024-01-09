@@ -29,7 +29,7 @@ function updateNextDueDate() {
 
     if (medicineHistory.length === 0) {
         const nextDueDate = new Date(today);
-        nextDueDate.setDate(today.getDate() + 4);
+        nextDueDate.setDate(today.getDate() + 7);
         document.getElementById("nextDueDate").innerText = `Next Due Date: ${nextDueDate.toDateString()}`;
         return;
     }
