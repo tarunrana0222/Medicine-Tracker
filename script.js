@@ -36,7 +36,7 @@ function updateNextDueDate() {
 
     const mostRecentDate = new Date(Math.max(...medicineHistory.map(date => new Date(date))));
     const nextDueDate = new Date(mostRecentDate);
-    nextDueDate.setDate(mostRecentDate.getDate() + 4);
+    nextDueDate.setDate(mostRecentDate.getDate() + 7);
 
     document.getElementById("nextDueDate").innerText = `Next Due Date: ${nextDueDate.toDateString()}`;
 }
@@ -53,7 +53,7 @@ function saveMedicineTaken() {
     }
 
     medicineHistory.push(selectedDate.toISOString());
-    selectedDate.setDate(selectedDate.getDate() + 4);
+    selectedDate.setDate(selectedDate.getDate() + 7);
     saveMedicineHistory();
     updateNextDueDate();
     displayHistory();
